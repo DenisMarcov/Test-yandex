@@ -1,0 +1,30 @@
+@include font-face(
+  "Merriweather", 
+  400, 
+  normal, 
+  url('/fonts/Merriweather/Merriweather-Regular.ttf') format('truetype')
+);
+@include font-face(
+  "Merriweather", 
+  700, 
+  normal, 
+  url('/fonts/Merriweather/Merriweather-bold.ttf') format('truetype')
+);
+@include font-face(
+  "Golos-Text", 
+  500, 
+  normal, 
+  url('/fonts/Golos_Text/GolosText-SemiBold.ttf') format('truetype')
+);
+@include font-face(
+  "Golos-Text", 
+  400, 
+  normal, 
+  url('/fonts/Golos_Text/GolosText-Regular.ttf') format('truetype')
+);
+@include font-face(
+  "Golos-Text", 
+  500, 
+  normal, 
+  url('/fonts/Golos_Text/GolosText-Medium.ttf') format('truetype')
+);

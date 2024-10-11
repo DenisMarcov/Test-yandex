@@ -1,0 +1,107 @@
+.invitation {
+    padding: 49px 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.invitation__title {
+    display: block;
+}
+
+.invitation__title--top{
+    background-image: url("../../images/chess-people@1x.jpg");
+    background-position: 50% 90%;
+    background-repeat: no-repeat;
+    background-size: 335px 212px;
+    padding: 0 0 255px;
+
+}
+@supports (background-image: url("image.webp")) {
+    .invitation__title--top{
+        background-image: url("../../images/chess-people@1x.webp");
+    }
+  }
+
+@media screen and (min-resolution: 192dpi) {
+    .invitation__title--top{
+        background-image: url("../../images/chess-people@2x.jpg");
+    }
+
+    @supports (background-image: url("image.webp")) {
+        .invitation__title--top{
+            background-image: url("../../images/chess-people@2x.webp");
+        }
+    }
+}
+
+.invitation__title--midle{
+    background-image: url("../../images/grossmaster@1x.jpg");
+    background-position: 50% 90%;
+    background-repeat: no-repeat;
+    background-size: 374px 430px;
+    margin: -20px;
+    padding: 28px 20px 471px;
+}
+
+@supports (background-image: url("image.webp")) {
+    .invitation__title--midle{
+        background-image: url("../../images/grossmaster@1x.webp");
+    }
+  }
+
+@media screen and (min-resolution: 192dpi) {
+    .invitation__title--midle{
+        background-image: url("../../images//grossmaster@2x.jpg");
+    }
+
+    @supports (background-image: url("image.webp")) {
+        .invitation__title--midle{
+            background-image: url("../../images/grossmaster@2x.webp");
+        }
+    }
+}
+
+.invitation__title--bottom{
+    padding: 8px 0 30px 0;
+}
+
+.invitation-list__wrapper {
+    border-bottom: 2px solid $gray-border;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+
+    &:last-of-type {
+        border-bottom: none;
+    }
+}
+
+.invitation-list__title {
+    padding-bottom: 12px;
+}
+
+.flex-row {
+    padding-bottom: 3px;
+}
+
+.del {
+    padding-right: 8px;
+    text-decoration: none;
+    position: relative;
+
+    &::after {
+        content: "";
+        background-color: #f54932;
+        border-radius: 1px;
+        width: 89px;
+        height: 2px;
+        position: absolute;
+        top: 13px;
+        left: -2px;
+    }
+}
+
+.invitation__help {
+    padding: 25px 0;
+}

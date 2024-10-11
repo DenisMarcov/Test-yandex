@@ -1,0 +1,29 @@
+.first-text {
+    font-family: $first-font;
+    font-weight: 400;
+    font-size: 36;
+    line-height: 110%;
+    text-transform: uppercase;
+    display: block;
+  
+    &--center {
+      text-align: center;
+      padding-left: 8px;
+    }
+  
+    &--right {
+      text-align: right;
+    }
+  }
+
+  .second-text {
+    font-family: $secondary-font;
+    font-size: 18px;
+    line-height: 130%;
+    font-weight: 400;
+  }
+
+  .blue-text {
+    color: $blue-text;
+    line-height: 120%;
+  }

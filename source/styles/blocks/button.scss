@@ -1,0 +1,26 @@
+.button {
+    width: 100%;
+    height: 48px;
+    text-align: center;
+    padding: 13px 0;
+    border-radius: 66px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 13px;
+
+    &--primary {
+        background-color: $balck-background;
+        color: $white-text;
+    }
+
+    &--secondary {
+        background-color: $white-background;
+    }
+
+    &--more {
+        width: 113px;
+        height: 35px;
+        border: 1px solid $blue-text;
+        padding: 0;
+    }
+}

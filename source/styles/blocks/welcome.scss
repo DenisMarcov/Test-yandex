@@ -1,0 +1,31 @@
+.welcome {
+    display: flex;
+    flex-direction: column;
+    padding: 92px $mobile-padding 0;
+    background-image: url("../../images/main-mobile@1x.jpg");
+    background-size: cover;
+    min-height: 813px;
+
+    &__description {
+        padding: 24px 0 31px 0;
+    }
+}
+
+@supports (background-image: url("image.webp")) {
+    .welcome {
+      background-image: url("../../images/main-mobile@1x.webp");
+    }
+  }
+
+@media screen and (min-resolution: 192dpi) {
+    .welcome {
+        background-image: url("../../images/main-mobile@2x.jpg");
+    }
+
+    @supports (background-image: url("image.webp")) {
+        .welcome {
+          background-image: url("../../images/main-mobile@2x.webp");
+        }
+      }
+}
+

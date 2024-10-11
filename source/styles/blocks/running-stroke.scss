@@ -1,0 +1,43 @@
+.running-stroke{
+    height: 38px;
+    width: calc(100% + (2 * $mobile-padding));
+    margin: auto auto 0 -20px;
+    background: red;
+    overflow: hidden;
+  
+  &__text{
+    text-align:center;
+    color:#fff;
+    text-transform: uppercase;
+    animation: text 30s infinite linear;
+    padding-top: 10px;
+    padding-left: 100%;
+    white-space: nowrap;
+    font-size: 16px;
+  }
+
+  &__dot{
+    position: relative;
+    padding-right: 24px;
+  }
+
+  &__dot::after {
+    content: "";
+    background-color: $white-background;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 6px;
+    right: 9px;
+  }
+}
+  @keyframes text {
+    0%{
+      transform: translate(0, 0);
+    }
+    
+    100%{
+      transform: translate(-510%, 0);
+    }
+  }

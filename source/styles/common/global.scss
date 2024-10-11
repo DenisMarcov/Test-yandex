@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 
@@ -8,8 +9,9 @@ html {
   height: 100%;
 }
 
-body {
-
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .visually-hidden {
@@ -23,4 +25,9 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.red-text {
+  color: $red-text;
+  font-weight: 700;
 }
