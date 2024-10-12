@@ -1,5 +1,5 @@
 .participants {
-    padding: 77px $mobile-padding 20px;
+    padding: 77px $mobile-padding 0;
 
     &__item {
         display: flex;
@@ -17,4 +17,26 @@
     padding: 7px 0 19px;
     color: $black-text;
     opacity: 0.6;
+}
+
+.participants__list {
+    padding-bottom: 81px;
+}
+
+.participants__button-next,
+.participants__button-prev {
+    top: 477px;
+}
+
+.participants__button-next {
+    right: 103px;
+}
+
+.participants__button-prev {
+    left: 103px;
+}
+
+.participants__numbers {
+    color: $black-text;
+    bottom: 110px;
 }

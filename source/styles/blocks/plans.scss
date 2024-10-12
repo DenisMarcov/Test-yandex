@@ -24,6 +24,23 @@
             background-size: 335px 182px;
             z-index: 2;
         }
+        
+        @supports (background-image: url("image.webp")) {
+            &::after {
+              background-image: url("../../images/plane@1x.webp");
+            }
+          }
+
+          @media screen and (min-resolution: 192dpi) {
+            &::after {
+                background-image: url("../../images/plane@2x.png");
+            }
+            @supports (background-image: url("image.webp")) {
+                &::after {
+                  background-image: url("../../images/plane@2x.webp");
+                }
+              }
+        }
     }
 
     &__item {
@@ -34,6 +51,23 @@
         width: 335px;
         line-height: 120%;
         padding: 64px 20px 34px 72px;
+    }
+
+    @supports (background-image: url("image.webp")) {
+        &__item {
+          background-image: url("../../images/slider-background@1x.webp");
+        }
+      }
+
+      @media screen and (min-resolution: 192dpi) {
+        &__item {
+            background-image: url("../../images/slider-background@2x.jpg");
+        }
+        @supports (background-image: url("image.webp")) {
+            &__item {
+              background-image: url("../../images/slider-background@2x.webp");
+            }
+          }
     }
 
     &__text-wrapper {

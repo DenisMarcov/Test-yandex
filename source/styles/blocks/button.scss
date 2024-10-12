@@ -11,16 +11,32 @@
     &--primary {
         background-color: $balck-background;
         color: $white-text;
+
+        &:hover {
+            background-color: $yellow-background;
+            color: $black-text;
+        }
     }
 
     &--secondary {
         background-color: $white-background;
+        opacity: 0.9;
+        
+        &:hover {
+            background-color: $balck-background;
+            color: $white-text;
+        }
     }
 
     &--more {
         width: 113px;
         height: 35px;
         border: 1px solid $blue-text;
-        padding: 0;
+        padding: 10px 0;
+
+        &:hover {
+            background-color: $blu-background;
+            color: $white-text;
+        }
     }
 }

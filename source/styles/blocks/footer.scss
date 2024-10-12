@@ -1,0 +1,9 @@
+.footer {
+    padding: 42px $mobile-padding 58px;
+    background-color: $milky-background;
+}
+
+.footer__text.fs-16 {
+    line-height: 120%;
+    opacity: 0.6;
+}
