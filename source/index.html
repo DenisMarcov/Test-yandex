@@ -11,21 +11,32 @@
 </head>
 <body>
     <header class="header">
-        <img src="icons/stack.svg#logo" alt="Логотип клуба четырех коней" width="213" height="32">
+        <picture>
+            <source width="247" height="37" type="image/svg+xml" media="(min-width: 1366px)" srcset="icons/stack.svg#logo">
+            <img src="icons/stack.svg#logo" alt="Логотип клуба четырех коней" width="213" height="32"> 
+        </picture>
     </header>
     <main class="main">
         <section class="welcome">
             <h1><span class="first-text first-text--left">Превратите уездный город </span><span class="first-text first-text--center">в столицу </span><span class="first-text first-text--right">земного шара</span></h1>
-            <p class="welcome__description second-text">Оплатите взнос на телеграммы <br>для организации Международного васюкинского турнира по шахматам</p>
-            <a href="#" class="button button--primary second-text">Поддержать шахматную мысль</a href="#">
-            <a href="#" class="button button--secondary second-text">Подробнее о турнире</a href="#">
-            <div class="running-stroke">
-                <p class="running-stroke__text first-text"><span class="running-stroke__dot"> Дело помощи утопающим — дело рук самих утопающих! </span><span class="running-stroke__dot"> Шахматы двигают вперед не только культуру, но и экономику! </span><span  class="running-stroke__dot"> Лед тронулся, господа присяжные заседатели! </span></p>
+            <p class="welcome__description second-text">Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам</p>
+            <div class="welcome__wrapper">
+                <a href="#" class="button button--primary second-text">Поддержать шахматную мысль</a href="#">
+                <a href="#" class="button button--secondary second-text">Подробнее о турнире</a href="#">        
             </div>
         </section>
+        <section class="running-stroke">
+            <p class="running-stroke__text first-text"><span class="running-stroke__dot"> Дело помощи утопающим — дело рук самих утопающих! </span><span class="running-stroke__dot"> Шахматы двигают вперед не только культуру, но и экономику! </span><span  class="running-stroke__dot"> Лед тронулся, господа присяжные заседатели! </span></p>
+        </section>
         <section class="invitation">
-            <h2 class="first-text fs-28"><span class="invitation__title invitation__title--top">Чтобы поддержать Международный васюкинский турнир</span><span class="invitation__title invitation__title--midle">посетите лекцию на тему: <strong class="red-text">«Плодотворная дебютная идея»</strong></span><span class="invitation__title invitation__title--bottom">и Сеанс <strong class="red-text">одновременной игры в шахматы на 160 досках</strong> гроссмейстера О. Бендера</span></h2>
-            <dl class="second-text">
+            <h2 class="first-text fs-28">
+                <div class="invitation__wrapper-of-text">
+                    <span class="invitation__title invitation__title--top">Чтобы поддержать Международный васюкинский турнир</span>
+                    <span class="invitation__title invitation__title--midle">посетите лекцию на тему: <strong class="red-text">«Плодотворная дебютная идея»</strong></span>
+                </div>
+                <span class="invitation__title invitation__title--bottom">и Сеанс <strong class="red-text">одновременной игры в шахматы на 160 досках</strong> гроссмейстера О. Бендера</span>
+            </h2>
+            <dl class="invitation-info second-text">
                 <div class="invitation-list__wrapper fs-20">
                   <dt class="invitation-list__title">Место проведения:</dt>
                   <dd class="semi-bold">Клуб «Картонажник»</dd>
@@ -40,25 +51,58 @@
                 </div>
                 <div class="invitation-list__wrapper fs-20 flex-row">
                   <dt class="invitation-list__title">Плата за игру:</dt>
-                  <dd class="semi-bold">50 коп.</dd>
+                  <dd class="semi-bold padding-left">50 коп.</dd>
                 </div>
                 <div class="invitation-list__wrapper fs-20">
                   <dt class="invitation-list__title">Взнос на телеграммы:</dt>
                   <dd class="semi-bold"><del class="del">100 руб.</del> 21 руб. 16 коп.</dd>
                 </div>
             </dl>
-            <p class="invitation__help blue-text second-text">По всем вопросам обращаться<br> в администрацию к К. Михельсону</p>
+            <p class="invitation__help blue-text second-text">По всем вопросам обращаться в администрацию к К. Михельсону</p>
         </section>
         <section class="plans">
-            <h2 class="first-text">Этапы преображения Васюков</h2>
+            <h2 class="plans__title first-text">Этапы преображения <br> Васюков</h2>
             <p class="plans__description blue-text second-text">Будущие источники обогащения васюкинцев</p>
             <div class="swiper mySwiper1">
                 <div class="plans__list swiper-wrapper second-text medium">
-                    <div class="plans__item swiper-slide"><div class="plans__text-wrapper"><span class="plans__number second-text semi-bold fs-20">1</span>Строительство железнодорожной магистрали Москва-Васюки</div><div class="plans__text-wrapper"><span class="plans__number second-text semi-bold fs-20">2</span>Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов</div></div>
-                    <div class="plans__item swiper-slide"><div class="plans__text-wrapper"><span class="plans__number second-text semi-bold fs-20">3</span>Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет</div></div>
-                    <div class="plans__item swiper-slide"><div class="plans__text-wrapper"><span class="plans__number second-text semi-bold fs-20">4</span>Строительство дворца <br>для турнира</div><div class="plans__text-wrapper"><span class="plans__number second-text semi-bold fs-20">5</span>Размещение гаражей <br>для гостевого автотранспорта</div></div>
-                    <div class="plans__item swiper-slide"><div class="plans__text-wrapper"><span class="plans__number second-text semi-bold fs-20">6</span>Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов</div></div>
-                    <div class="plans__item swiper-slide"><div class="plans__text-wrapper"><span class="plans__number second-text semi-bold fs-20">7</span>Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн</div></div>
+                    <div class="plans__item swiper-slide grid-slide1">
+                        <div class="plans__text-wrapper">
+                            <span class="plans__number second-text semi-bold fs-20">1</span>
+                            Строительство железнодорожной магистрали Москва-Васюки
+                        </div>
+                        <div class="plans__text-wrapper">
+                            <span class="plans__number second-text semi-bold fs-20">2</span>
+                            Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов
+                        </div>
+                    </div>
+                    <div class="plans__item swiper-slide grid-slide2">
+                        <div class="plans__text-wrapper">
+                            <span class="plans__number second-text semi-bold fs-20">3</span>
+                            Поднятие сельского хозяйства в радиусе <br>на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет
+                        </div>
+                    </div>
+                    <div class="plans__item swiper-slide grid-slide3">
+                        <div class="plans__text-wrapper">
+                            <span class="plans__number second-text semi-bold fs-20">4</span>
+                            Строительство дворца для турнира
+                        </div>
+                        <div class="plans__text-wrapper">
+                            <span class="plans__number second-text semi-bold fs-20">5</span>
+                            Размещение гаражей для гостевого автотранспорта
+                        </div>
+                    </div>
+                    <div class="plans__item swiper-slide grid-slide4">
+                        <div class="plans__text-wrapper">
+                            <span class="plans__number second-text semi-bold fs-20">6</span>
+                            Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов
+                        </div>
+                    </div>
+                    <div class="plans__item swiper-slide grid-slide5">
+                        <div class="plans__text-wrapper">
+                            <span class="plans__number second-text semi-bold fs-20">7</span>
+                            Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн
+                        </div>
+                    </div>
                 </div>
                 <div class="swiper-pagination"></div>
                 <button class="swiper-button-next" type="button"></button>
@@ -67,10 +111,12 @@
             </section>
         <section class="participants">
             <h2 class="participants__title first-text">Участники турнира</h2>
-            <div class="participants__list swiper mySwiper2">
+            <div class="participants__wrapper swiper mySwiper2">
                 <div class="participants__list swiper-wrapper">
                     <div class="participants__item participant swiper-slide">
                         <picture>
+                            <source width="320" height="320" type="image/webp" media="(min-width: 1366px)" srcset="images/chess-player@1x.webp 1x, images/chess-player@2x.webp 2x">
+                            <source width="320" height="320" type="image/jpeg" media="(min-width: 1366px)" srcset="images/chess-player@1x.jpg 1x, images/chess-player@2x.jpg 2x">
                             <source type="image/webp" srcset="images/chess-player@1x.webp 1x, images/chess-player@2x.webp 2x">
                             <source type="image/jpeg" srcset="images/chess-player@1x.jpg 1x, images/chess-player@2x.jpg 2x">
                             <img src="images/chess-player@1x.jpg" alt="фото участника" width="244" height="244">
@@ -81,6 +127,8 @@
                     </div>
                     <div class="participants__item participant swiper-slide">
                         <picture>
+                            <source width="320" height="320" type="image/webp" media="(min-width: 1366px)" srcset="images/chess-player@1x.webp 1x, images/chess-player@2x.webp 2x">
+                            <source width="320" height="320" type="image/jpeg" media="(min-width: 1366px)" srcset="images/chess-player@1x.jpg 1x, images/chess-player@2x.jpg 2x">
                             <source type="image/webp" srcset="images/chess-player@1x.webp 1x, images/chess-player@2x.webp 2x">
                             <source type="image/jpeg" srcset="images/chess-player@1x.jpg 1x, images/chess-player@2x.jpg 2x">
                             <img src="images/chess-player@1x.jpg" alt="фото участника" width="244" height="244">
@@ -91,6 +139,8 @@
                     </div>
                     <div class="participants__item participant swiper-slide">
                         <picture>
+                            <source width="320" height="320" type="image/webp" media="(min-width: 1366px)" srcset="images/chess-player@1x.webp 1x, images/chess-player@2x.webp 2x">
+                            <source width="320" height="320" type="image/jpeg" media="(min-width: 1366px)" srcset="images/chess-player@1x.jpg 1x, images/chess-player@2x.jpg 2x">
                             <source type="image/webp" srcset="images/chess-player@1x.webp 1x, images/chess-player@2x.webp 2x">
                             <source type="image/jpeg" srcset="images/chess-player@1x.jpg 1x, images/chess-player@2x.jpg 2x">
                             <img src="images/chess-player@1x.jpg" alt="фото участника" width="244" height="244">
@@ -101,6 +151,8 @@
                     </div>
                     <div class="participants__item participant swiper-slide">
                         <picture>
+                            <source width="320" height="320" type="image/webp" media="(min-width: 1366px)" srcset="images/chess-player@1x.webp 1x, images/chess-player@2x.webp 2x">
+                            <source width="320" height="320" type="image/jpeg" media="(min-width: 1366px)" srcset="images/chess-player@1x.jpg 1x, images/chess-player@2x.jpg 2x">
                             <source type="image/webp" srcset="images/chess-player@1x.webp 1x, images/chess-player@2x.webp 2x">
                             <source type="image/jpeg" srcset="images/chess-player@1x.jpg 1x, images/chess-player@2x.jpg 2x">
                             <img src="images/chess-player@1x.jpg" alt="фото участника" width="244" height="244">
@@ -111,6 +163,8 @@
                     </div>
                     <div class="participants__item participant swiper-slide">
                         <picture>
+                            <source width="320" height="320" type="image/webp" media="(min-width: 1366px)" srcset="images/chess-player@1x.webp 1x, images/chess-player@2x.webp 2x">
+                            <source width="320" height="320" type="image/jpeg" media="(min-width: 1366px)" srcset="images/chess-player@1x.jpg 1x, images/chess-player@2x.jpg 2x">
                             <source type="image/webp" srcset="images/chess-player@1x.webp 1x, images/chess-player@2x.webp 2x">
                             <source type="image/jpeg" srcset="images/chess-player@1x.jpg 1x, images/chess-player@2x.jpg 2x">
                             <img src="images/chess-player@1x.jpg" alt="фото участника" width="244" height="244">
@@ -121,6 +175,8 @@
                     </div>
                     <div class="participants__item participant swiper-slide">
                         <picture>
+                            <source width="320" height="320" type="image/webp" media="(min-width: 1366px)" srcset="images/chess-player@1x.webp 1x, images/chess-player@2x.webp 2x">
+                            <source width="320" height="320" type="image/jpeg" media="(min-width: 1366px)" srcset="images/chess-player@1x.jpg 1x, images/chess-player@2x.jpg 2x">
                             <source type="image/webp" srcset="images/chess-player@1x.webp 1x, images/chess-player@2x.webp 2x">
                             <source type="image/jpeg" srcset="images/chess-player@1x.jpg 1x, images/chess-player@2x.jpg 2x">
                             <img src="images/chess-player@1x.jpg" alt="фото участника" width="244" height="244">
@@ -134,9 +190,9 @@
                 <div class="participants__button-next swiper-button-next"></div>
                 <div class="participants__button-prev swiper-button-prev"></div>                
             </div>
-            <div class="running-stroke">
-                <p class="running-stroke__text first-text"><span class="running-stroke__dot"> Дело помощи утопающим — дело рук самих утопающих! </span><span class="running-stroke__dot"> Шахматы двигают вперед не только культуру, но и экономику! </span><span  class="running-stroke__dot"> Лед тронулся, господа присяжные заседатели! </span></p>
-            </div>
+        </section>
+        <section class="running-stroke">
+            <p class="running-stroke__text first-text"><span class="running-stroke__dot"> Дело помощи утопающим — дело рук самих утопающих! </span><span class="running-stroke__dot"> Шахматы двигают вперед не только культуру, но и экономику! </span><span  class="running-stroke__dot"> Лед тронулся, господа присяжные заседатели! </span></p>
         </section>
     </main>
     <footer class="footer">

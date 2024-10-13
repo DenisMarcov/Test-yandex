@@ -4,8 +4,35 @@
     flex-direction: column;
 }
 
+@media screen and (min-width: $desktop-width) {
+    .invitation {
+        padding: 30px $desktop-padding 0;
+    }
+}
+
+.padding-left {
+    padding-left: 12px;
+}
+
+.flex-row {
+    padding-bottom: 3px;
+}
+
 .invitation__title {
     display: block;
+}
+
+@media screen and (min-width: $desktop-width) {
+    .invitation__title {
+       font-size: 36px;
+       line-height: 135%;
+    }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .invitation-list__title {
+        background-color: $white-background;
+    }
 }
 
 .invitation__title--top{
@@ -31,6 +58,14 @@
         .invitation__title--top{
             background-image: url("../../images/chess-people@2x.webp");
         }
+    }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .invitation__title--top {
+        padding: 0 ;
+        background-image: unset;
+        display: inline;
     }
 }
 
@@ -61,8 +96,51 @@
     }
 }
 
-.invitation__title--bottom{
+@media screen and (min-width: $desktop-width) {
+    .invitation__title--midle {
+        padding: 0 0 0 22px;
+        background-image: unset;
+        display: inline;
+    }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .invitation__wrapper-of-text {
+        padding: 77px 450px 76px 0;
+        background-image: url("../../images/chess-people@1x.jpg");
+        background-position: 100% 52%;
+        background-repeat: no-repeat;
+        background-size: 394px 250px;
+        }
+}
+
+.invitation__title--bottom {
     padding: 8px 0 30px 0;
+}
+
+@media screen and (min-width: $desktop-width) {
+    .invitation__title--bottom {
+        padding: 16px 30px 30px 518px;
+        position: relative; 
+
+        &::after {
+            position: absolute;
+            content: "";
+            top: -31px;
+            left: -29px;
+            width: 531px;
+            height: 589px;
+            background-image: url("../../images/grossmaster@1x.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .invitation-info {
+        padding: 16px 30px 34px 518px; 
+    }
 }
 
 .invitation-list__wrapper {
@@ -74,6 +152,29 @@
 
     &:last-of-type {
         border-bottom: none;
+        padding-top: 5px;
+    }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .invitation-list__wrapper {
+        display: grid;
+        grid-template-columns: 0.76fr 1fr;
+        padding: 0;
+        min-width: 704px;
+        gap: 2px;
+        background-color: $gray-border;
+
+        & dd {
+            padding-top: 18px;
+            padding-left: 18px;
+            padding-bottom: 12px;
+            background-color: $white-background
+        }
+
+        &:last-of-type {
+            padding-top: 0px;
+        }
     }
 }
 
@@ -81,8 +182,12 @@
     padding-bottom: 12px;
 }
 
-.flex-row {
-    padding-bottom: 3px;
+
+@media screen and (min-width: $desktop-width) {
+    .invitation-list__title {
+        padding-top: 16px;
+        padding-bottom: 12px;
+    }
 }
 
 .del {
@@ -104,4 +209,11 @@
 
 .invitation__help {
     padding: 25px 0;
+}
+
+@media screen and (min-width: $desktop-width) {
+    .invitation__help {
+        margin: 0 52px 0 auto;
+        padding: 0;
+    }
 }

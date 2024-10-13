@@ -1,5 +1,5 @@
 .participants {
-    padding: 77px $mobile-padding 0;
+    padding: 77px $mobile-padding 40px;
 
     &__item {
         display: flex;
@@ -9,8 +9,27 @@
     }
 }
 
+@media screen and (min-width: $desktop-width) {
+    .participants {
+    padding: 124px $desktop-padding 0;
+
+    &__title {
+        font-size: 54px;
+        margin-bottom: -90px;
+    }
+    }
+
+
+}
+
 .participant__name {
-    padding: 30px 0 0;
+    padding: 23px 0 0;
+}
+
+@media screen and (min-width: $desktop-width) {
+    .participant__name {
+        padding-top: 21px;
+    }    
 }
 
 .participant__rank {
@@ -23,20 +42,68 @@
     padding-bottom: 81px;
 }
 
+@media screen and (min-width: $desktop-width) {
+    .participants__list {
+        padding-top: 56px;
+        padding-bottom: 45px;
+    }    
+}
+
+.participants__wrapper {
+    padding-bottom: 81px;
+}
+
+@media screen and (min-width: $desktop-width) {
+    .participants__wrapper {
+        padding-top: 56px;
+    }    
+}
+
 .participants__button-next,
 .participants__button-prev {
     top: 477px;
 }
 
+@media screen and (min-width: $desktop-width) {
+        .participants__button-next,
+        .participants__button-prev {
+            top: 46px;
+    }
+}
+
+
 .participants__button-next {
     right: 103px;
+}
+
+@media screen and (min-width: $desktop-width) {
+    .participants__button-next {
+        right: 0px;
+    }
 }
 
 .participants__button-prev {
     left: 103px;
 }
 
+@media screen and (min-width: $desktop-width) {
+    .participants__button-prev {
+        left: unset;
+        right: 107px;
+    }
+}
+
 .participants__numbers {
     color: $black-text;
     bottom: 110px;
+}
+
+
+@media screen and (min-width: $desktop-width) {
+    .participants__numbers {
+        right: 55px;
+        left: unset;
+        top: 55px;
+        width: 40px;
+    }
 }

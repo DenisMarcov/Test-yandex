@@ -1,25 +1,54 @@
-const swiper1 = new Swiper('.mySwiper1', {
-    navigation: {
-      nextEl: '.mySwiper1 .swiper-button-next', // Кнопка "вперед"
-      prevEl: '.mySwiper1 .swiper-button-prev', // Кнопка "назад"
-    },
-    pagination: {
-        el: '.mySwiper1 .swiper-pagination',  // Селектор для элемента пагинации
-        clickable: true,           // Включаем кликабельность точек пагинации
-      },
-    speed: 400, // Скорость анимации
-    spaceBetween: 100, // Пространство между слайдами
-  });
+let swiper1;
+let swiper2;
 
-  const swiper2 = new Swiper('.mySwiper2', {
+function initSwiper1() {
+    if (window.innerWidth < 1366) {
+        if (!swiper1) {
+            swiper1 = new Swiper('.mySwiper1', {
+                navigation: {
+                    nextEl: '.mySwiper1 .swiper-button-next',
+                    prevEl: '.mySwiper1 .swiper-button-prev',
+                },
+                pagination: {
+                    el: '.mySwiper1 .swiper-pagination',
+                    clickable: true,
+                },
+                speed: 400,
+                spaceBetween: 100,
+            });
+        }
+    } else if (swiper1) {
+        swiper1.destroy(false, true); 
+        swiper1 = undefined;
+    }
+}
+
+swiper2 = new Swiper('.mySwiper2', {
     navigation: {
-      nextEl: '.mySwiper2 .swiper-button-next', // Кнопка "вперед"
-      prevEl: '.mySwiper2 .swiper-button-prev', // Кнопка "назад"
+        nextEl: '.mySwiper2 .swiper-button-next',
+        prevEl: '.mySwiper2 .swiper-button-prev',
     },
     pagination: {
-        el: '.mySwiper2 .swiper-pagination',  // Селектор для элемента пагинации
+        el: '.mySwiper2 .swiper-pagination',
         type: 'fraction',
-      },
-    speed: 400, // Скорость анимации
-    spaceBetween: 100, // Пространство между слайдами
-  });
+    },
+    speed: 400,
+    spaceBetween: 100,
+    breakpoints: {
+        1024: {
+            slidesPerView: 3,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        576: {
+            slidesPerView: 1,
+        }
+    }
+});
+
+initSwiper1();
+
+window.addEventListener('resize', function() {
+    initSwiper1();
+});

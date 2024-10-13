@@ -6,6 +6,11 @@
     background-size: cover;
     min-height: 813px;
 
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
     &__description {
         padding: 24px 0 31px 0;
     }
@@ -29,3 +34,20 @@
       }
 }
 
+@media screen and (min-width: $desktop-width) {
+  .welcome {
+    background-image: url("../../images/main-desktop@1x.jpg");
+    min-height: 700px;
+    padding: 124px 752px 12px 72px;
+
+    &__wrapper {
+      flex-direction: row;
+      gap: 13px;
+    }
+
+    &__description {
+      text-align: center;
+      padding-bottom: 39px;
+    }
+  }
+}

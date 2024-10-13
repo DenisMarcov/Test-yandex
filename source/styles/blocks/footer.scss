@@ -3,6 +3,12 @@
     background-color: $milky-background;
 }
 
+@media screen and (min-width: $desktop-width) {
+    .footer {
+        padding: 42px $desktop-padding 67px;
+    }    
+}
+
 .footer__text.fs-16 {
     line-height: 120%;
     opacity: 0.6;

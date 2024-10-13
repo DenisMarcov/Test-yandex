@@ -16,6 +16,12 @@
     }
   }
 
+  @media screen and (min-width: $desktop-width) {
+    .first-text {
+      font-size: 60;
+    }
+  }
+
   .second-text {
     font-family: $secondary-font;
     font-size: 18px;
@@ -27,3 +33,9 @@
     color: $blue-text;
     line-height: 120%;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    .blue-text {
+      font-size: 20px;
+    }
+    }

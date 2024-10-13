@@ -1,4 +1,10 @@
 .header {
-    padding: 10px 0 0 20px;
+    padding: 10px 0 0 $mobile-padding;
     position: absolute;
+}
+
+@media screen and (min-width: $desktop-width) {
+    .header {
+        padding: 21px 0 0 $desktop-padding;
+    }
 }
