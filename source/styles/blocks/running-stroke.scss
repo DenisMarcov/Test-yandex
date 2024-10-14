@@ -1,6 +1,6 @@
 .running-stroke {
     height: 38px;
-    width: calc(100% + (2 * $mobile-padding));
+    width: calc(100% + $mobile-padding);
     margin: -40px auto 0 -20px;
     background: red;
     overflow: hidden;

@@ -56,8 +56,8 @@
 }
 
 @media screen and (min-width: $desktop-width) {
-    .mySwiper1 .swiper-button-next,
-    .mySwiper1 .swiper-button-prev {
+    .swiper-plans .swiper-button-next,
+    .swiper-plans .swiper-button-prev {
         display: none;
     }
 }

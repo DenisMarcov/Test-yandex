@@ -1,37 +1,39 @@
-let swiper1;
-let swiper2;
+let swiperPlans;
+let swiperPlayers;
 
-function initSwiper1() {
+function initSwiperPlans() {
     if (window.innerWidth < 1366) {
-        if (!swiper1) {
-            swiper1 = new Swiper('.mySwiper1', {
+        if (!swiperPlans) {
+            swiperPlans = new Swiper('.swiper-plans', {
                 navigation: {
-                    nextEl: '.mySwiper1 .swiper-button-next',
-                    prevEl: '.mySwiper1 .swiper-button-prev',
+                    nextEl: '.swiper-plans .swiper-button-next',
+                    prevEl: '.swiper-plans .swiper-button-prev',
                 },
                 pagination: {
-                    el: '.mySwiper1 .swiper-pagination',
+                    el: '.swiper-plans .swiper-pagination',
                     clickable: true,
                 },
                 speed: 400,
                 spaceBetween: 100,
             });
         }
-    } else if (swiper1) {
-        swiper1.destroy(false, true); 
-        swiper1 = undefined;
+    } else if (swiperPlans) {
+        swiperPlans.destroy(false, true); 
+        swiperPlans = undefined;
     }
 }
 
-swiper2 = new Swiper('.mySwiper2', {
+swiperPlayers = new Swiper('.swiper-players', {
     navigation: {
-        nextEl: '.mySwiper2 .swiper-button-next',
-        prevEl: '.mySwiper2 .swiper-button-prev',
+        nextEl: '.swiper-players .swiper-button-next',
+        prevEl: '.swiper-players .swiper-button-prev',
     },
     pagination: {
-        el: '.mySwiper2 .swiper-pagination',
+        el: '.swiper-players .swiper-pagination',
         type: 'fraction',
+        
     },
+    
     speed: 400,
     spaceBetween: 100,
     breakpoints: {
@@ -47,8 +49,8 @@ swiper2 = new Swiper('.mySwiper2', {
     }
 });
 
-initSwiper1();
+initSwiperPlans();
 
 window.addEventListener('resize', function() {
-    initSwiper1();
+    initSwiperPlans();
 });
