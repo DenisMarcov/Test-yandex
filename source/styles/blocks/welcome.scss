@@ -1,6 +1,7 @@
 .welcome {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 92px $mobile-padding 0;
     background-image: url("../../images/main-mobile@1x.jpg");
     background-size: cover;
@@ -9,6 +10,8 @@
     &__wrapper {
       display: flex;
       flex-direction: column;
+      width: 100%;
+      max-width: 500px;
     }
 
     &__description {
@@ -43,11 +46,56 @@
     &__wrapper {
       flex-direction: row;
       gap: 13px;
+      max-width: 700px;
     }
 
     &__description {
       text-align: center;
       padding-bottom: 39px;
     }
+
   }
+
+  @supports (background-image: url("image.webp")) {
+    .welcome {
+      background-image: url("../../images/main-desktop@1x.webp");
+    }
+  }
+
+@media screen and (min-resolution: 192dpi) {
+    .welcome {
+        background-image: url("../../images/main-desktop@2x.jpg");
+    }
+
+    @supports (background-image: url("image.webp")) {
+        .welcome {
+          background-image: url("../../images/main-desktop@2x.webp");
+        }
+      }
+}
+}
+
+@media screen and (min-width: $big-desktop-width) {
+  .welcome {
+    background-image: url("../../images/main-desktop1920@1x.jpg");
+    padding: 124px 1028px 12px 349px;
+  }
+
+  @supports (background-image: url("image.webp")) {
+    .welcome {
+      background-image: url("../../images/main-desktop1920@1x.webp");
+    }
+  }
+
+@media screen and (min-resolution: 192dpi) {
+    .welcome {
+        background-image: url("../../images/main-desktop1920@2x.jpg");
+    }
+
+    @supports (background-image: url("image.webp")) {
+        .welcome {
+          background-image: url("../../images/main-desktop1920@2x.webp");
+        }
+      }
+}
 }

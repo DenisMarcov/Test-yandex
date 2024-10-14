@@ -106,12 +106,31 @@
 
 @media screen and (min-width: $desktop-width) {
     .invitation__wrapper-of-text {
+        display: block;
         padding: 77px 450px 76px 0;
         background-image: url("../../images/chess-people@1x.jpg");
         background-position: 100% 52%;
         background-repeat: no-repeat;
         background-size: 394px 250px;
         }
+
+    @supports (background-image: url("image.webp")) {
+        .invitation__wrapper-of-text {
+            background-image: url("../../images/chess-people@1x.webp");
+        }
+    }
+        
+    @media screen and (min-resolution: 192dpi) {
+        .invitation__wrapper-of-text {
+            background-image: url("../../images/chess-people@2x.jpg");
+        }
+        
+    @supports (background-image: url("image.webp")) {
+        .invitation__wrapper-of-text {
+            background-image: url("../../images/chess-people@2x.webp");
+            }
+        }
+    }
 }
 
 .invitation__title--bottom {
@@ -134,11 +153,29 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+
+    @supports (background-image: url("image.webp")) {
+        &::after {
+            background-image: url("../../images/grossmaster@1x.webp");
+        }
+    }
+        
+    @media screen and (min-resolution: 192dpi) {
+        &::after {
+            background-image: url("../../images/grossmaster@2x.jpg");
+        }
+        
+    @supports (background-image: url("image.webp")) {
+        &::after {
+            background-image: url("../../images/grossmaster@2x.webp");
+            }
+        }
+    }
     }
 }
 
 @media screen and (min-width: $desktop-width) {
-    .invitation-info {
+    .invitation-list {
         padding: 16px 30px 34px 518px; 
     }
 }

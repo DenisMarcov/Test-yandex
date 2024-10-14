@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preload" href="../source/fonts/Golos_Text/GolosText-Medium.ttf" as="font" type="font/truetype">
+    <link rel="preload" href="../source/fonts/Golos_Text/GolosText-Medium.woff" as="font" type="font/woff">
+    <link rel="preload" href="../source/fonts/Golos_Text/GolosText-Medium.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="../source/fonts/Golos_Text/GolosText-Regular.ttf" as="font" type="font/truetype">
+    <link rel="preload" href="../source/fonts/Golos_Text/GolosText-Regular.woff" as="font" type="font/woff">
+    <link rel="preload" href="../source/fonts/Golos_Text/GolosText-Regular.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="../source/fonts/Golos_Text/GolosText-SemiBold.ttf" as="font" type="font/truetype">
+    <link rel="preload" href="../source/fonts/Golos_Text/GolosText-SemiBold.woff" as="font" type="font/woff">
+    <link rel="preload" href="../source/fonts/Golos_Text/GolosText-SemiBold.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="../source/fonts/Merriweather/Merriweather-Bold.ttf" as="font" type="font/truetype">
+    <link rel="preload" href="../source/fonts/Merriweather/Merriweather-Bold.woff" as="font" type="font/woff">
+    <link rel="preload" href="../source/fonts/Merriweather/Merriweather-Bold.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="../source/fonts/Merriweather/Merriweather-Regular.ttf" as="font" type="font/truetype">
+    <link rel="preload" href="../source/fonts/Merriweather/Merriweather-Regular.woff" as="font" type="font/woff">
+    <link rel="preload" href="../source/fonts/Merriweather/Merriweather-Regular.woff2" as="font" type="font/woff2">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -18,25 +33,25 @@
     </header>
     <main class="main">
         <section class="welcome">
-            <h1><span class="first-text first-text--left">Превратите уездный город </span><span class="first-text first-text--center">в столицу </span><span class="first-text first-text--right">земного шара</span></h1>
-            <p class="welcome__description second-text">Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам</p>
-            <div class="welcome__wrapper">
-                <a href="#" class="button button--primary second-text">Поддержать шахматную мысль</a>
-                <a href="#" class="button button--secondary second-text">Подробнее о турнире</a>        
-            </div>
+                <h1><span class="first-text first-text--left">Превратите уездный город </span><span class="first-text first-text--center">в столицу </span><span class="first-text first-text--right">земного шара</span></h1>
+                <p class="welcome__description second-text">Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам</p>
+                <div class="welcome__wrapper">
+                    <a href="#" class="button button--primary second-text">Поддержать шахматную мысль</a>
+                    <a href="#info" class="button button--secondary second-text">Подробнее о турнире</a>        
+                </div>
         </section>
         <div class="running-stroke">
             <p class="running-stroke__text first-text"><span class="running-stroke__dot"> Дело помощи утопающим — дело рук самих утопающих! </span><span class="running-stroke__dot"> Шахматы двигают вперед не только культуру, но и экономику! </span><span  class="running-stroke__dot"> Лед тронулся, господа присяжные заседатели! </span></p>
         </div>
         <section class="invitation">
             <h2 class="first-text fs-28">
-                <div class="invitation__wrapper-of-text">
+                <span class="invitation__wrapper-of-text">
                     <span class="invitation__title invitation__title--top">Чтобы поддержать Международный васюкинский турнир</span>
-                    <span class="invitation__title invitation__title--midle">посетите лекцию на тему: <strong class="red-text">«Плодотворная дебютная идея»</strong></span>
-                </div>
-                <span class="invitation__title invitation__title--bottom">и Сеанс <strong class="red-text">одновременной игры в шахматы на 160 досках</strong> гроссмейстера О. Бендера</span>
+                    <span class="invitation__title invitation__title--midle">посетите лекцию на тему: <strong class=" red-bold-text">«Плодотворная дебютная идея»</strong></span>
+                </span>
+                <span class="invitation__title invitation__title--bottom">и Сеанс <strong class="red-bold-text">одновременной игры в шахматы на 160 досках</strong> гроссмейстера О. Бендера</span>
             </h2>
-            <dl class="invitation-info second-text">
+            <dl id="info" class="invitation-list second-text">
                 <div class="invitation-list__wrapper fs-20">
                   <dt class="invitation-list__title">Место проведения:</dt>
                   <dd class="semi-bold">Клуб «Картонажник»</dd>
@@ -63,50 +78,52 @@
         <section class="plans">
             <h2 class="plans__title first-text">Этапы преображения <br> Васюков</h2>
             <p class="plans__description blue-text second-text">Будущие источники обогащения васюкинцев</p>
-            <div class="swiper swiper-plans">
-                <div class="plans__list swiper-wrapper second-text medium">
-                    <div class="plans__item swiper-slide grid-slide-1">
-                        <div class="plans__text-wrapper">
-                            <span class="plans__number second-text semi-bold fs-20">1</span>
-                            Строительство железнодорожной магистрали Москва-Васюки
+            <div class="plane">
+                <div class="swiper swiper-plans">
+                    <div class="plans__list swiper-wrapper second-text medium">
+                        <div class="plans__item swiper-slide grid-slide-1">
+                            <div class="plans__text-wrapper">
+                                <span class="plans__number second-text semi-bold fs-20">1</span>
+                                Строительство железнодорожной магистрали Москва-Васюки
+                            </div>
+                            <div class="plans__text-wrapper">
+                                <span class="plans__number second-text semi-bold fs-20">2</span>
+                                Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов
+                            </div>
                         </div>
-                        <div class="plans__text-wrapper">
-                            <span class="plans__number second-text semi-bold fs-20">2</span>
-                            Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов
+                        <div class="plans__item swiper-slide grid-slide-2">
+                            <div class="plans__text-wrapper">
+                                <span class="plans__number second-text semi-bold fs-20">3</span>
+                                Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет
+                            </div>
+                        </div>
+                        <div class="plans__item swiper-slide grid-slide-3">
+                            <div class="plans__text-wrapper">
+                                <span class="plans__number second-text semi-bold fs-20">4</span>
+                                Строительство дворца для турнира
+                            </div>
+                            <div class="plans__text-wrapper">
+                                <span class="plans__number second-text semi-bold fs-20">5</span>
+                                Размещение гаражей для гостевого автотранспорта
+                            </div>
+                        </div>
+                        <div class="plans__item swiper-slide grid-slide-4">
+                            <div class="plans__text-wrapper">
+                                <span class="plans__number second-text semi-bold fs-20">6</span>
+                                Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов
+                            </div>
+                        </div>
+                        <div class="plans__item swiper-slide grid-slide-5">
+                            <div class="plans__text-wrapper">
+                                <span class="plans__number second-text semi-bold fs-20">7</span>
+                                Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн
+                            </div>
                         </div>
                     </div>
-                    <div class="plans__item swiper-slide grid-slide-2">
-                        <div class="plans__text-wrapper">
-                            <span class="plans__number second-text semi-bold fs-20">3</span>
-                            Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет
-                        </div>
-                    </div>
-                    <div class="plans__item swiper-slide grid-slide-3">
-                        <div class="plans__text-wrapper">
-                            <span class="plans__number second-text semi-bold fs-20">4</span>
-                            Строительство дворца для турнира
-                        </div>
-                        <div class="plans__text-wrapper">
-                            <span class="plans__number second-text semi-bold fs-20">5</span>
-                            Размещение гаражей для гостевого автотранспорта
-                        </div>
-                    </div>
-                    <div class="plans__item swiper-slide grid-slide-4">
-                        <div class="plans__text-wrapper">
-                            <span class="plans__number second-text semi-bold fs-20">6</span>
-                            Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов
-                        </div>
-                    </div>
-                    <div class="plans__item swiper-slide grid-slide-5">
-                        <div class="plans__text-wrapper">
-                            <span class="plans__number second-text semi-bold fs-20">7</span>
-                            Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-                <button class="swiper-button-next" type="button"></button>
-                <button class="swiper-button-prev" type="button"></button>
+                    <div class="swiper-pagination"></div>
+                    <button class="swiper-button-next" type="button"></button>
+                    <button class="swiper-button-prev" type="button"></button>
+                </div>    
             </div>
             </section>
         <section class="participants">

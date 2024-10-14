@@ -11,6 +11,30 @@
   url('/fonts/Merriweather/Merriweather-bold.ttf') format('truetype')
 );
 @include font-face(
+  "Merriweather", 
+  400, 
+  normal, 
+  url('/fonts/Merriweather/Merriweather-Regular.woff') format('woff')
+);
+@include font-face(
+  "Merriweather", 
+  700, 
+  normal, 
+  url('/fonts/Merriweather/Merriweather-bold.woff') format('woff')
+);
+@include font-face(
+  "Merriweather", 
+  400, 
+  normal, 
+  url('/fonts/Merriweather/Merriweather-Regular.woff2') format('woff2')
+);
+@include font-face(
+  "Merriweather", 
+  700, 
+  normal, 
+  url('/fonts/Merriweather/Merriweather-bold.woff2') format('woff2')
+);
+@include font-face(
   "Golos-Text", 
   500, 
   normal, 
@@ -27,4 +51,40 @@
   500, 
   normal, 
   url('/fonts/Golos_Text/GolosText-Medium.ttf') format('truetype')
+);
+@include font-face(
+  "Golos-Text", 
+  500, 
+  normal, 
+  url('/fonts/Golos_Text/GolosText-SemiBold.woff') format('woff')
+);
+@include font-face(
+  "Golos-Text", 
+  400, 
+  normal, 
+  url('/fonts/Golos_Text/GolosText-Regular.woff') format('woff')
+);
+@include font-face(
+  "Golos-Text", 
+  500, 
+  normal, 
+  url('/fonts/Golos_Text/GolosText-Medium.woff') format('woff')
+);
+@include font-face(
+  "Golos-Text", 
+  500, 
+  normal, 
+  url('/fonts/Golos_Text/GolosText-SemiBold.woff2') format('woff2')
+);
+@include font-face(
+  "Golos-Text", 
+  400, 
+  normal, 
+  url('/fonts/Golos_Text/GolosText-Regular.woff2') format('woff2')
+);
+@include font-face(
+  "Golos-Text", 
+  500, 
+  normal, 
+  url('/fonts/Golos_Text/GolosText-Medium.woff2') format('woff2')
 );

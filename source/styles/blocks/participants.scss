@@ -6,6 +6,7 @@
         flex-direction: column;
         align-items: center;
         padding: 41px 0 0;
+        text-align: center;
     }
 }
 
@@ -61,7 +62,8 @@
 
 .participants__button-next,
 .participants__button-prev {
-    top: 477px;
+    top: unset;
+    bottom: 100px;
 }
 
 @media screen and (min-width: $desktop-width) {
@@ -106,4 +108,9 @@
         top: 55px;
         width: 40px;
     }
+}
+
+.slash-pagination {
+    color: $black-text;
+    opacity: 0.6;
 }

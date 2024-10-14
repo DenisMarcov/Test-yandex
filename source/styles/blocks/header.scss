@@ -8,3 +8,10 @@
         padding: 21px 0 0 $desktop-padding;
     }
 }
+
+
+@media screen and (min-width: $big-desktop-width) {
+    .header {
+        padding: 21px 0 0 $big-desktop-padding;
+    }
+}
